@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator - Biaysel</title>
+    <link rel="stylesheet" href="./CSS/syle.css">
+</head>
+<body>
+    <section id="section">
+        <div class="section__container">
+            <h1 class="titulo-principal">CV Generator</h1>
+            <form action="" class="section__informacion-personal">
+                <h2 class="titulo-general">Informacion Personal</h2>
+                <div class="informacion-personal__nombre informacion-personal__div-content">
+                    <label for="name" class="titulo-general">Nombre:</label>
+                    <input type="text" name="name" id="name" class="input-all">
+                </div>
+                <div class="informacion-personal__titulo informacion-personal__div-content">
+                    <label for="titulo" class="titulo-general">Titulo:</label>
+                    <input type="text" name="titulo" id="titulo" class="input-all">
+                </div>
+                <div class="informacion-personal__email informacion-personal__div-content">
+                    <label for="email" class="titulo-general">Correo Electronico:</label>
+                    <input type="email" name="email" id="email" class="input-all">
+                </div>
+                <div class="informacion-personal__telefono informacion-personal__div-content">
+                    <label for="telefono" class="titulo-general">Telefono:</label>
+                    <input type="tel" name="telefono" id="telefono" class="input-all">
+                </div>
+                <div class="informacion-personal__fecha-nacimiento informacion-personal__div-content">
+                    <label for="fecha-nacimiento" class="titulo-general">Fecha de Nacimiento:</label>
+                    <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" class="input-all">
+                </div>
+                <div class="informacion-personal__link-linkedin informacion-personal__div-content">
+                    <label for="link-linkedin" class="titulo-general">Enlace de Linkedin:</label>
+                    <input type="url" name="link-linkedinn" id="link-linkedin" class="input-all">
+                </div>
+                <!-- <div class="informacion-personal__imagen">
+                    <label for="imagen">Seleccionar imagen</label>
+                    <input type="file" name="imagen" id="imagen" class="input-all">
+                </div> -->
+            </form>
+            <form action="" class="section__habilidades">
+                <label for="habilidades" class="titulo-general">Habilidades</label>
+                <div class="habilidades__inputs skills-divs" id="habilidades-inpus-container">
+                    <input type="text" name="habilidades" id="input-habilidades" placeholder="Habilidad" class="input-all">
+                    <select name="select" id="select-habilidades" class="input-all">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <button type="submit" class="habilidad__button button-g">Agregar habilidad</button>
+            </form>
+            <form action="" class="section__software">
+                <label for="software" class="titulo-general">Software</label>
+                <div class="software__inputs skills-divs">
+                    <input type="text" name="software" id="software" placeholder="Software" class="input-all">
+                    <select name="select" id="select" class="input-all">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <button type="submit" class="software__button button-g">Agregar software</button>
+            </form>
+            <form action="" class="section__idiomas">
+                <label for="idiomas" class="titulo-general">Idiomas</label>
+                <div class="idiomas__inputs skills-divs">
+                    <input type="text" name="idiomas" id="idiomas" placeholder="Idioma" class="input-all">
+                    <select name="select" id="select" class="input-all">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <button type="submit" class="idiomas__button button-g">Agregar idioma</button>
+            </form>
+            <form action="" class="section__resumen">
+                <label for="resumen" class="titulo-general">Resumen profesional</label>
+                <textarea name="resumen" id="resumen" placeholder="Resumen de carrera" class="input-all"></textarea>
+            </form>
+            <form action="" class="section__empresa">
+                <label for="empresa" class="titulo-general">Experiencia Laboral</label>
+                <div class="empresa__inputs skills-divs">
+                    <input type="text" name="empresa" id="empresa" placeholder="Empresa" class="input-all">
+                    <input type="date" name="date" id="date" class="input-all">
+                    <input type="date" name="date" id="date" class="input-all">
+                </div>
+                <button type="submit" class="empresa__button button-g">Agregar experiencia</button>
+            </form>
+            <form action="" class="section__educacion">
+                <label for="educacion" class="titulo-general">Educacion</label>
+                <div class="educacion__inputs skills-divs">
+                    <input type="text" name="educacion" id="educacion" placeholder="Institucion" class="input-all">
+                    <input type="date" name="date" id="date" class="input-all">
+                    <input type="date" name="date" id="date" class="input-all">
+                </div>
+                <button type="submit" class="educacion__button button-g">Agregar Educacion</button>
+            </form>
+            <form action="" class="section__certificacion">
+                <label for="certificacion" class="titulo-general">Certificaciones</label>
+                <div class="certificacion__inputs skills-divs">
+                    <input type="text" name="certificacion" id="certificacionn" placeholder="Certificacion" class="input-all">
+                    <input type="date" name="date" id="date" class="input-all">
+                    <input type="date" name="date" id="date" class="input-all">
+                </div>
+                <button type="submit" class="certificacion__button button-g">Agregar Certificacion</button>
+            </form>
+            <button type="submit" class="section__generar-cv button-g" id="button-submit">Generar CV</button>
+        </div>
+    </section>
+
+    <!-- curriculum -->
+    <section id="curriculum">
+        <!-- <div class="curriculum-container">
+            <aside id="aside">
+                <div class="header">
+                    <h1>Jonh Wick</h1>
+                    <h2>Software engineer</h2>
+                    <img src="./images/82f0ec980bf247ae29e81bb697d378ea.jpg" alt="img">
+                </div>
+                <div class="personal-info">
+                    <h3 class="titulo-h3">Personal Info</h3>
+                    <div class="personal-info__email">
+                        <h4>Correo Electronico</h4>
+                        <li>ejemplo@gmail.com</li>
+                    </div>
+                    <div class="personal-info__telefono">
+                        <h4>Telefono</h4>
+                        <li>(829) - 987 0987</li>
+                    </div>
+                    <div class="personal-info__fecha-nacimiento">
+                        <h4>Fecha de nacimiento</h4>
+                        <li>09/05/2005</li>
+                    </div>
+                    <div class="personal-info__linkedin">
+                        <h4>Linkedin</h4>
+                        <li>linkedin.educacion.com</li>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3 class="titulo-h3">Skills</h3>
+                    <div class="habilidad aside__div-second">
+                        <h4>Teamwork</h4>
+                        <li>(5/5)</li>
+                    </div>
+                    <div class="habilidad aside__div-second">
+                        <h4>Teamwork</h4>
+                        <li>(5/5)</li>
+                    </div>
+                    <div class="habilidad aside__div-second">
+                        <h4>Teamwork</h4>
+                        <li>(5/5)</li>
+                    </div>
+                </div>
+                <div class="software">
+                    <h3 class="titulo-h3">Software</h3>
+                    <div class="software aside__div-second">
+                        <h4>Javascript</h4>
+                        <li>(5/5)</li>
+                    </div>
+                    <div class="software aside__div-second">
+                        <h4>Javascript</h4>
+                        <li>(5/5)</li>
+                    </div>
+                    <div class="software aside__div-second">
+                        <h4>Javascript</h4>
+                        <li>(5/5)</li>
+                    </div>
+                </div>
+                <div class="idiomas">
+                    <h3 class="titulo-h3">Idiomas</h3>
+                    <div class="idioma aside__div-second">
+                        <h4>Ingles</h4>
+                        <li>(5/5)</li>
+                    </div>
+                    <div class="idioma aside__div-second">
+                        <h4>Ingles</h4>
+                        <li>(5/5)</li>
+                    </div>
+                </div>
+            </aside>
+            <section id="section-container-c">
+                <div class="personal-resumen div-content">
+                    <h3 class="titul-h3-second">Resumen personal</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ad ducimus accusantium tenetur dignissimos? Nulla minus nemo vel quas ea sit accusamus fuga magni blanditiis, similique quo minima dolorem adipisci doloribus atque eaque eveniet perspiciatis ab. Pariatur vel quae corporis ipsum. Distinctio exercitationem officia, et dolores rerum suscipit quos inventore dolore, aliquid ducimus placeat alias vero? Eius ipsum ab tempore sit, dicta omnis quaerat provident aspernatur, dignissimos nemo eum velit debitis. Deserunt facere, ad sed quae atque explicabo aperiam officia, facilis provident repudiandae odio tempora eligendi eveniet. Quo placeat pariatur dolore sequi itaque ipsa, temporibus, ab unde totam autem debitis!</p>
+                </div>
+                <div class="experiencia-laboral div-content">
+                    <h3 class="titul-h3-second">Experiencia Laboral</h3>
+                    <div class="experiencia">
+                        <li><span>Frontend </span>(01/04/2012 - 04/07/2017)</li>
+                        <li><span>Frontend </span>(01/04/2012 - 04/07/2017)</li>
+                        <li><span>Frontend </span>(01/04/2012 - 04/07/2017)</li>
+                    </div>
+                </div>
+                <div class="educacion div-content">
+                    <h3 class="titul-h3-second">Educacion</h3>
+                    <div class="educacion">
+                        <li><span>ITLA </span>(01/04/2012 - 04/07/2017)</li>
+                        <li><span>ITLA </span>(01/04/2012 - 04/07/2017)</li>
+                        <li><span>ITLA </span>(01/04/2012 - 04/07/2017)</li>
+                    </div>
+                </div>
+                <div class="certificaciones div-content">
+                    <h3 class="titul-h3-second">certificacion</h3>
+                    <div class="certificacion">
+                        <li><span>Backend </span>(01/04/2012 - 04/07/2017)</li>
+                        <li><span>Backend </span>(01/04/2012 - 04/07/2017)</li>
+                        <li><span>Backend </span>(01/04/2012 - 04/07/2017)</li>
+                    </div>
+                </div>
+            </section>
+        </div> -->
+    </section>
+    <script src="./Javascript/script.js"></script>
+</body>
+</html>
